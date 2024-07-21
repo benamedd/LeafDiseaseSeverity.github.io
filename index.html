@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Severity Measurement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Disease Severity Measurement</h1>
+    <div class="button-container">
+        <label for="imageUpload" class="custom-file-upload">
+            Choose File & Measure Severity
+        </label>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="takePhoto">Take Photo & Measure Severity</button>
+    </div>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <img id="uploadedImage" alt="Uploaded Image">
+    <img id="cameraImage" alt="Camera Image">
+    <p id="result"></p>
+    <button id="backToMenu" style="display: none;">Back to Menu</button>
+
+    <script src="https://docs.opencv.org/master/opencv.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
